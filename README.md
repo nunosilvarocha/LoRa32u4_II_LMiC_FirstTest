@@ -21,26 +21,26 @@
 > Versão [1.8.5](https://www.arduino.cc/en/Main/Software)
 >  *Possivelmente funciona com outras versões, esta foi a que eu usei.*
 #### Biblioteca LMIC
-[LMIC](https://github.com/matthijskooijman/arduino-lmic)
+> [LMIC](https://github.com/matthijskooijman/arduino-lmic)
 
 
 ## Preparação
 ### LoRa32u4 II Drivers
 
- - Download e instalação dos [drivers](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe)
+ > - Download e instalação dos [drivers](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe)
 
 ### Arduino IDE setup
- - Download e instalação do [Arduino IDE](https://www.arduino.cc/en/Main/Software)<p>
- - Ficheiro > Preferências
- - URL Adicionais do Gestor de Placas > Adicionar o link abaixo `https://adafruit.github.io/arduino-board-index/package_adafruit_index.json`<p>
- - Ferramentas > Placa > Gestor de Placas...
- - Selecionar o tipo "Contribuído"
- - Pesquisar por "Adafruit AVR Boards"<p>
- - Ferramenstas > Board > Adafruit Feather 32u4
- - Ferramentas > Porta > Selecionar a porta<p>
- - Fazer download da biblioteca [LMIC](https://github.com/matthijskooijman/arduino-lmic)
- - Rascunho > Incluir Biblioteca > Adicionar Biblioteca .ZIP
- - Selecionar o .ZIP do ficheiro descarregado
+ > - Download e instalação do [Arduino IDE](https://www.arduino.cc/en/Main/Software)<p>
+ > - Ficheiro > Preferências
+ > - URL Adicionais do Gestor de Placas > Adicionar o link abaixo `https://adafruit.github.io/arduino-board-index/package_adafruit_index.json`<p>
+ > - Ferramentas > Placa > Gestor de Placas...
+ > - Selecionar o tipo "Contribuído"
+ > - Pesquisar por "Adafruit AVR Boards"<p>
+ > - Ferramenstas > Board > Adafruit Feather 32u4
+ > - Ferramentas > Porta > Selecionar a porta<p>
+ > - Fazer download da biblioteca [LMIC](https://github.com/matthijskooijman/arduino-lmic)
+ > - Rascunho > Incluir Biblioteca > Adicionar Biblioteca .ZIP
+ > - Selecionar o .ZIP do ficheiro descarregado
 
 ## LMiC_raw
 É um emplo para ser usado em dois LoRa32u4 II.
