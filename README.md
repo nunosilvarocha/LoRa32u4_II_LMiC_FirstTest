@@ -1,4 +1,5 @@
 
+
 # Primeiro teste com LoRA
 ##  Material utilizado
 ### Lora32u4 II 
@@ -19,7 +20,7 @@
 >- Interface SPI
 #### Arduino IDE
 > Versão [1.8.5](https://www.arduino.cc/en/Main/Software)
->  *Possivelmente funciona com outras versões, esta foi a que eu usei.*
+>  *(Possivelmente funciona com outras versões, esta foi a que eu usei.)*
 #### Biblioteca LMIC
 > [LMIC](https://github.com/matthijskooijman/arduino-lmic)
 
@@ -42,9 +43,35 @@
  > - Rascunho > Incluir Biblioteca > Adicionar Biblioteca .ZIP
  > - Selecionar o .ZIP do ficheiro descarregado
 
-## LMiC_raw
-É um emplo para ser usado em dois LoRa32u4 II.
-Os dois enviam e aguardam mensagens.
+## Programação do LoRa32u4 II
+Usamos o exemplo 'raw' da biblioteca LMIC  
+> - Arduino IDE > Ficheiro > Exemplos > LMIC - Arduino > raw
 
-! É preciso altera o ficheiro config.h
-Abilitar o #define DISABLE_INVERT_IQ_ON_RX
+Neste ficheiro é necessário verificar a programação (do ficheiro raw) de forma a mapear os pinos corretos do microcontrolador para o modulo LoRA e verificar a frequência de comunicação a usar.
+
+    ...
+    // Pin mapping
+    const lmic_pinmap lmic_pins = {
+        .nss = 8,
+        .rxtx = LMIC_UNUSED_PIN,
+        .rst = 4,
+        .dio = {7, 6 , LMIC_UNUSED_PIN}
+    };
+    ...
+    //Frequência de comunicação
+    LMIC.freq = 868000000;
+
+Alterar o ficheiro '*config.h*' que se localiza na pasta da biblioteca LMIC. 
+No meu caso: 
+> *Documents\Arduino\libraries\arduino-lmic-master\src\lmic*
+
+Temos que remover os comentários em função das nossas necessidades.
+Para este exemplo:
+
+    ...
+    #define CFG_eu868 1
+    ...
+    #define CFG_sx1276_radio 1
+    ...
+    #define DISABLE_INVERT_IQ_ON_RX
+Guardamos todas as alterações e enviamos a programação.
