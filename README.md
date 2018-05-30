@@ -1,8 +1,10 @@
-
-
+*`Não me responsabilizo por nenhum dano, material ou pessoal causado.`*
 # Primeiro teste com LoRA
+Exemplo básico de comunicação com LoRA. 
+O teste é efectuado com duas placas LoRa32u4 II que efetuam comunicação entre sí.
+> ##### ATENÇÃO:  A utilização do módulo com a antena desligada pode danificar o mesmo.
 ##  Material utilizado
-### Lora32u4 II 
+### Lora32u4 II  (2x)
 ![enter image description here](https://raw.githubusercontent.com/nunosilvarocha/LoRa32u4_II_com_LMiC/master/Img/Lora32u4_II.jpg?token=AgTL5uf7T2hwvR9SZYJILOTP81oJ04Msks5bFw5IwA%3D%3D)
 [Datasheet](https://docs.bsfrance.fr/documentation/11355_LORA32U4II/Datasheet_LoRa32u4II_1.1.pdf "Datasheet")
 [Página do fabricante](https://bsfrance.fr/lora-long-range/1345-LoRa32u4-II-Lora-LiPo-Atmega32u4-SX1276-HPD13-868MHZ-EU-Antenna.html "Página do fabricante")
@@ -74,4 +76,10 @@ Para este exemplo:
     #define CFG_sx1276_radio 1
     ...
     #define DISABLE_INVERT_IQ_ON_RX
+    ...
 Guardamos todas as alterações e enviamos a programação.
+## Validação de resultados
+> - Usar dois módulos LoRa32u4 II  
+> - Carregar a mesma programação nos dois módulos 
+> - Ligar os dois módulos por USB 
+> - Verificar nas leituras da porta SERIE existe comunicação (envio/receção de mensagens)
