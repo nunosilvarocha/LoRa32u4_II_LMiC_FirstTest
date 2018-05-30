@@ -30,18 +30,14 @@
  > - Download e instalação dos [drivers](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.2.0/adafruit_drivers_2.2.0.0.exe)
 
 ### Arduino IDE setup
- > - Download e instalação do [Arduino IDE](https://www.arduino.cc/en/Main/Software)<p>
- >
+ > - Download e instalação do [Arduino IDE](https://www.arduino.cc/en/Main/Software)<p><p>
  > - Ficheiro > Preferências
- > - URL Adicionais do Gestor de Placas > Adicionar o link abaixo `https://adafruit.github.io/arduino-board-index/package_adafruit_index.json`<p>
- >
+ > - URL Adicionais do Gestor de Placas > Adicionar o link abaixo `https://adafruit.github.io/arduino-board-index/package_adafruit_index.json`<p><p>
  > - Ferramentas > Placa > Gestor de Placas...
  > - Selecionar o tipo "Contribuído"
- > - Pesquisar por "Adafruit AVR Boards"<p>
- >
+ > - Pesquisar por "Adafruit AVR Boards"<p><p>
  > - Ferramenstas > Board > Adafruit Feather 32u4
- > - Ferramentas > Porta > Selecionar a porta<p>
- >
+ > - Ferramentas > Porta > Selecionar a porta<p><p>
  > - Fazer download da biblioteca [LMIC](https://github.com/matthijskooijman/arduino-lmic)
  > - Rascunho > Incluir Biblioteca > Adicionar Biblioteca .ZIP
  > - Selecionar o .ZIP do ficheiro descarregado
