@@ -78,6 +78,9 @@ Para este exemplo:
     #define DISABLE_INVERT_IQ_ON_RX
     ...
 Guardamos todas as alterações e enviamos a programação.
+## Programação do LoRa32u4 II
+Para que este exemplo funcione é ainda necessário conectar dois pinos.
+> - Conectar o pino 'DIO1' ao pino 6
 ## Validação de resultados
 > - Usar dois módulos LoRa32u4 II  
 > - Carregar a mesma programação nos dois módulos 
